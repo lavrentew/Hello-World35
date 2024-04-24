@@ -23,6 +23,12 @@ final class ViewController: UIViewController {
     
     @IBAction func isTappedButton() {
         greetingLabel.isHidden.toggle()
+        
+        if greetingLabel.isHidden {
+            greetingButton.setTitle("Show greeting", for: .normal)
+        } else {
+            greetingButton.setTitle("Hide greeting", for: .normal)
+        }
     }
     
 }
